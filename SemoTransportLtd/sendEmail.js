@@ -4,6 +4,8 @@ $( document ).ready(function() {
 	
 	$('#sendemail').click(function() {
 		console.log( "submit!" );
+		ajaxCallToSendEmail();
+		console.log( "Finished!" );
 	});
 });
 
@@ -16,18 +18,13 @@ function ajaxCallToSendEmail()
 	  dataType: "json",
 	  format: "json",
 	  data: {
-		'key': 'YOUR API KEY HERE',
+		'key': '8Zv5rqV9JC7KPB6b6VodyQ',
 		'message': {
-		  'from_email': 'YOUR@EMAIL.HERE',
+		  'from_email': 'davinder.kumar.saini@outlook.com',
 		  'to': [
 			  {
-				'email': 'RECIPIENT_NO_1@EMAIL.HERE',
+				'email': 'davinder.kumar.saini@gmail.com',
 				'name': 'RECIPIENT NAME (OPTIONAL)',
-				'type': 'to'
-			  },
-			  {
-				'email': 'RECIPIENT_NO_2@EMAIL.HERE',
-				'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
 				'type': 'to'
 			  }
 			],
