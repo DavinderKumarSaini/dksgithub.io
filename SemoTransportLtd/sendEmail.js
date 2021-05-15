@@ -13,10 +13,7 @@ function ajaxCallToSendEmail()
 {
 	$.ajax({
 	  type: "POST",
-	  url: "https://mandrillapp.com/api/1.0/messages/send.json",
-	  crossDomain:true,
-	  dataType: "json",
-	  format: "json",
+	  url: "https://mandrillapp.com/api/1.0/messages/send.json",	  
 	  data: {
 		'key': '8Zv5rqV9JC7KPB6b6VodyQ',
 		'message': {
